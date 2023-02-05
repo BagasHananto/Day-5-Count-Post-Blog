@@ -22,13 +22,13 @@
     /*Untuk Navbar*/
     
     nav {
-        display: flex;
-        align-items: center;
-        position: relative;
+        display: flex !important;
+        align-items: center !important;
+        position: relative !important;
         background-color: white;
-        padding: 5px 10px 5px 10px;
-        height: 8vh;
-        align-items: center;
+        padding: 5px 10px 5px 10px !important;
+        height: 8vh!important;
+        align-items: center!important;
     }
     
     nav div {
@@ -84,7 +84,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: auto;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         border: 1px solid white;
         background-color: white;
@@ -418,4 +417,45 @@
     
     .content-project {
         padding: 20px;
+    }
+    
+    .container-1 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border: 1px solid white;
+        background-color: white;
+        border-radius: 15px;
+        margin: 50px auto;
+        padding: 50px;
+    }
+    
+    .text-center {
+        text-align: center;
+        font-size: xx-large;
+    }
+    
+    .d-flex {
+        display: flex;
+        gap: 50px;
+        margin-top: 50px;
+    }
+    
+    .p {
+        margin-top: 50px;
+        text-align: justify;
+    }
+    
+    .fotocontent {
+        border-radius: 15px;
+    }
+    
+    .marginbottom {
+        margin-top: 30px;
+    }
+    
+    .margintop {
+        margin-top: 30px;
+    }
+    
+    .container-project>a {
+        text-decoration: none;
     }

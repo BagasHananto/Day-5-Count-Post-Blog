@@ -23,7 +23,7 @@ function getData(event) {
 
 
     // document.getElementById("alert").style.backgroundColor = "rgb(255, 0, 0)";
-    //document.getElementById("alert").style.color = "rgb(255, 255, 255)";
+    // document.getElementById("alert").style.color = "rgb(255, 255, 255)";
 
     //Pengkondisian, jika diisi dan jika tidak diisi untuk Form
     if (title == "") {
@@ -106,8 +106,8 @@ function showProject() {
                 <div class="tec-in">${projects[i].iconFil[3]}</div>
                 </div>
                     <div style="display: flex; justify-content: space-between; margin-top:10px; column-gap: 10px">
-                        <button class="btn-primary">Edit</button>
-                        <button class="btn-danger">Delete</button>
+                        <button class="btn-primary" style="cursor :pointer;">Edit</button>
+                        <button class="btn-danger"  style="cursor :pointer;">Delete</button>
                     </div>
                 </div>
            </div>`
