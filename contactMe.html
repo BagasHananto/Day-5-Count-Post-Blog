@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/home.css" />
+</head>
+
+<body>
+    <!--Navbar-->
+    <header>
+        <nav>
+            <div class="left-side">
+                <img src="asset/logo/logo.png" id="image" />
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="myproject.html">MyProject</a></li>
+                </ul>
+            </div>
+            <div class="right-side">
+                <a href="contactMe.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <!--Navbar End-->
+
+    <!--Form-->
+    <div class="form-group">
+        <div class="Title">
+            <h2>Get In Touch</h2>
+        </div>
+        <!--Alert-->
+        <div class="alert-contact" id="alert-contact" role="alert-contact"></div>
+        <!--Alert End-->
+
+        <div style="width: 350px; margin: 0 auto; margin-top: 0; margin-bottom: 50px;">
+            <form>
+                <div class="name">
+                    <label for="name" style="font-size: 18px; font-weight: 500;">Name</label>
+                    <input type="text" placeholder="Input your name" id="name" style="width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #c4c4c4" />
+                </div>
+
+                <div>
+                    <label for="email" style="font-size: 18px; font-weight: 500;">Email</label>
+                    <input type="text" placeholder="Input your email" id="email" style="width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #c4c4c4" />
+                </div>
+
+                <div>
+                    <label for="phone" style="font-size: 18px; font-weight: 500;">Phone Number</label>
+                    <input type="text" placeholder="Input your phone number" id="phone" style="width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #c4c4c4" />
+                </div>
+
+                <div>
+                    <label for="subject" style="font-size: 18px; font-weight: 500;">Subject</label>
+                    <select id="subject" style="width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #c4c4c4">
+                    <option selected>Who are you?</option>
+                    <option>Family</option>
+                    <option>Friend</option>
+                    <option>Stranger</option>
+                    <option>Enemy</option>
+                </select>
+                </div>
+
+                <div>
+                    <label for="description" style="font-size: 18px; font-weight: 500;">Description</label>
+                    <textarea id="description" placeholder="Input your message" style="width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #c4c4c4; height: 100px; resize: none"></textarea>
+                </div>
+
+                <div>
+                    <button type="button" id="button" onclick="getData()" style="background-color:#1e1e1e; padding: 8px 30px; border: none; border-radius: 20px; font-size: 17px; color: white; cursor: pointer; float: right;">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Form end-->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

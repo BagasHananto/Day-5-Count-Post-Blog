@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyProject</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <!--Navbar-->
+    <header>
+        <nav>
+            <div class="left-side">
+                <img src="asset/logo/logo.png" id="image" />
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="myproject.html" class="active">MyProject</a></li>
+                </ul>
+            </div>
+            <div class="right-side">
+                <a href="contactMe.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <!--Navbar End-->
+
+
+    <section>
+        <div class="form-group">
+            <div class="Title">
+                <h2>Add My Project</h2>
+            </div>
+            <!--Alert-->
+            <div class="alert" id="alert" role="alert"></div>
+            <!--Alert-->
+            <div style="width: 350px; margin: 0 auto; margin-top: 0; margin-bottom: 50px;">
+                <form>
+                    <div class="name">
+                        <label for="name" style="font-size: 18px; font-weight: 500;">Project Name</label>
+                        <input type="text" placeholder="Input your project name" id="name" style="width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #c4c4c4" />
+                    </div>
+                    <div class="date">
+                        <div>
+                            <label for="dateStart" style="font-size: 18px; font-weight: 500;">Start Date</label>
+                            <input type="date" id="start" style="width: 90%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #c4c4c4;" />
+                        </div>
+
+                        <div>
+                            <label for="dateEnd" style="font-size: 18px; font-weight: 500;">End Date</label>
+                            <input type="date" id="end" style="width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #c4c4c4" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="description" style="font-size: 18px; font-weight: 500;">Description</label>
+                        <textarea id="description" placeholder="Input your message" style="width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #c4c4c4; height: 100px; resize: none"></textarea>
+                    </div>
+                    <div>
+                        <label for="technologies" style="font-size: 18px; font-weight: 500;">Technologies</label><br>
+                        <div class="technologi">
+                            <div class="bawahatas">
+                                <div class="atas">
+                                    <input type="checkbox" id="nodejs" name="technologies">
+                                    <label for="nodejs">NodeJs</label>
+                                </div>
+                                <input type="checkbox" id="java" name="technologies">
+                                <label for="java">Java</label>
+                            </div>
+                            <div class="atasbawah">
+                                <div class="bawah">
+                                    <input type="checkbox" id="php" name="technologies">
+                                    <label for="php">PHP</label>
+                                </div>
+                                <input type="checkbox" id="laravel" name="technologies">
+                                <label for="laravel">Laravel</label>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <label for="upload-image" class="file" style="font-size: 18px; font-weight: 500;">Upload Image</label>
+                            <input type="file" id="image_att" style="width: 100%; box-sizing: border-box; padding: 8px; margin-top: 5px; margin-bottom: 20px; border-radius: 5px; border: 1px solid white; cursor: pointer;" accept=".jpeg, .jpg, .png" />
+
+                        </div>
+                        <div>
+                            <button type="button" onclick="getData(event)" style="background-color:#1e1e1e; padding: 8px 30px; border: none; border-radius: 20px; font-size: 17px; color: white; cursor: pointer; float: right;">Submit</button>
+                        </div>
+                </form>
+                </div>
+            </div>
+            <h2 style="margin: 0px auto 20px auto;">My Projects</h2>
+            <div class="container-project">
+                <div id="content-project" class="content-project" style=" display:flex; flex-wrap: wrap; justify-content:center; column-gap: 30px;">
+                </div>
+            </div>
+    </section>
+
+
+
+    <script src="js/project.js"></script>
+
+</body>
+
+</html>
